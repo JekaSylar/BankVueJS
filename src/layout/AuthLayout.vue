@@ -1,16 +1,16 @@
 <template>
   <div class="container">
     <div class="row">
-      <login-view />
+      <app-message />
+      <router-view></router-view>
     </div>
   </div>
 </template>
 
 <script>
-import LoginView from "../views/LoginView.vue";
-
+import AppMessage from "../components/ui/AppMessage.vue";
 export default {
-  components: { LoginView },
+  components: { AppMessage },
 };
 </script>
 
