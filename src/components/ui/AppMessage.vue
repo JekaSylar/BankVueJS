@@ -3,7 +3,7 @@
     v-if="message"
     class="d-flex justify-content-center align-content-center flex-wrap"
   >
-    <div :class="['alert col-lg-6 col-sm-6 ', message.type]" role="alert">
+    <div :class="['alert col-lg-10 col-sm-610 ', message.type]" role="alert">
       {{ message.value }}
     </div>
     <button

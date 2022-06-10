@@ -4,6 +4,7 @@ const HomeView = () => import('../views/HomeView.vue')
 const LoginView = () => import('../views/LoginView.vue')
 const HelpView = () => import('../views/HelpView.vue')
 const CurrencyView = () => import('../views/CurrencyView.vue')
+const RequestView = () => import('../views/RequestView.vue')
 
 const routes = [
 
@@ -12,6 +13,12 @@ const routes = [
       name: 'home',
       meta: { layout: 'main', auth: true },
       component: HomeView
+   },
+   {
+      path: '/request/:id',
+      name: 'request',
+      meta: { layout: 'main', auth: true },
+      component: RequestView
    },
 
    {

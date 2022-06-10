@@ -45,7 +45,7 @@
 </template>
 
 <script>
-import useLoginForm from "../use/login-form";
+import { useLoginForm } from "../use/login-form";
 export default {
   setup() {
     return { ...useLoginForm() };

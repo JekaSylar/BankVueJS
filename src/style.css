@@ -1,5 +1,6 @@
 body {
    background-color: #2e3f50;
+   font-family: 'Open Sans', sans-serif;
 }
 
 .card {
@@ -35,5 +36,68 @@ body {
 }
 
 .nav-item a {
-   font-size: 16px;
+   font-size: 1rem;
+   font-weight: 600;
+   padding-right: 15px;
+   color: #000;
+}
+
+.router-link-active,
+.router-link-exact-active {
+   border-bottom: 3px solid #036e4b;
+   color: #000;
+}
+
+.navbar-brand {
+   font-family: 'Pacifico', cursive;
+   font-size: 1.75rem;
+}
+
+.requestModal {
+   background-color: #fff;
+   padding: 25px;
+   border-radius: 7px;
+   margin: 20px 0;
+}
+
+.modal-row {
+   position: fixed;
+   left: 0;
+   top: 0;
+   z-index: 10;
+   width: 100%;
+   background-color: rgba(52, 49, 49, 0.86);
+   height: 100%;
+}
+
+.modal-footer {
+   justify-content: space-between;
+}
+
+.badge {
+   font-size: 0.8rem;
+   border: 1px solid #eee;
+   border-radius: 15px;
+   padding: 0 .5rem;
+}
+
+.badge.primary {
+   border-color: #3eaf7c;
+   color: #3eaf7c;
+}
+
+.badge.danger {
+   border-color: #e53935;
+   color: #e53935;
+}
+
+.badge.warning {
+   border-color: #c25205;
+   color: #c25205;
+}
+
+.filter {
+   display: flex;
+   justify-content: flex-start;
+   margin-bottom: 30px;
 }

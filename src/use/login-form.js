@@ -4,7 +4,7 @@ import * as yup from "yup";
 import { useStore } from 'vuex'
 import { useRouter } from 'vue-router'
 
-export default function useLoginForm() {
+export function useLoginForm() {
 
    const store = useStore()
    const router = useRouter()

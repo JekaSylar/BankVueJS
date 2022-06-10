@@ -6,8 +6,11 @@ const TOKEN_KEY = 'jwt-token'
 export default {
    namespaced: true,
 
-   state: {
-      token: localStorage.getItem('TOKEN_KEY')
+   state() {
+      return {
+         token: localStorage.getItem(TOKEN_KEY)
+      }
+
    },
 
    mutations: {

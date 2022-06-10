@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
-      <router-link class="navbar-brand" to="/">Онлайн Банк</router-link>
+      <a href="#" class="navbar-brand" to="/">Онлайн Банк</a>
       <button
         class="navbar-toggler"
         type="button"
