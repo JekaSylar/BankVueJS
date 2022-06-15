@@ -8,7 +8,7 @@ export default {
   props: {
     type: {
       type: String,
-      required: true,
+      default: "pending",
       validator(value) {
         return ["active", "cancelled", "done", "pending"].includes(value);
       },
@@ -30,6 +30,7 @@ export default {
     };
 
     watch(props, (val) => {
+      console.log(props.type, "sss");
       className.value = classesMap[val.type];
       text.value = textMap[val.type];
     });

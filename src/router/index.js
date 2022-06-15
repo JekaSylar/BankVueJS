@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import store from '../store'
 const HomeView = () => import('../views/HomeView.vue')
 const LoginView = () => import('../views/LoginView.vue')
-const HelpView = () => import('../views/HelpView.vue')
+const TaskView = () => import('../views/TaskView.vue')
 const CurrencyView = () => import('../views/CurrencyView.vue')
 const RequestView = () => import('../views/RequestView.vue')
 
@@ -22,10 +22,10 @@ const routes = [
    },
 
    {
-      path: '/help',
-      name: 'help',
+      path: '/task',
+      name: 'task',
       meta: { layout: 'main', auth: true },
-      component: HelpView
+      component: TaskView
    },
 
    {

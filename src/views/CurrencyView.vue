@@ -1,6 +1,7 @@
 <template>
   <app-loader v-if="loading" />
   <app-page title="Курс валют" v-else>
+    <app-breadcrumb page="Курс валют" />
     <div class="table-currency">
       <table class="table table-bordered" v-if="currencys">
         <thead>
@@ -29,6 +30,7 @@ import { computed, onMounted, ref } from "vue";
 import { useStore } from "vuex";
 import AppPage from "../components/ui/AppPage.vue";
 import AppLoader from "../components/ui/AppLoader.vue";
+import AppBreadcrumb from "../components/ui/AppBreadcrumb.vue";
 
 export default {
   setup() {
@@ -49,7 +51,7 @@ export default {
       loading,
     };
   },
-  components: { AppPage, AppLoader },
+  components: { AppPage, AppLoader, AppBreadcrumb },
 };
 </script>
 

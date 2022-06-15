@@ -19,7 +19,7 @@
             <router-link class="nav-link" to="/">Заявки</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/help">Помощь</router-link>
+            <router-link class="nav-link" to="/task">Задача</router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" to="/currency"

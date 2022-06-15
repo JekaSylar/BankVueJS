@@ -1,20 +1,14 @@
 <template>
   <app-loader v-if="loading" />
   <app-page :title="title" v-else>
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <router-link to="/">Заявки</router-link>
-        </li>
-        <li class="breadcrumb-item active" aria-current="page">
-          {{ title }}
-        </li>
-      </ol>
-    </nav>
+    <app-breadcrumb :page="title" />
     <p><strong>Имя владельца</strong>: {{ request.fio }}</p>
     <p><strong>Телефон</strong>: {{ request.phone }}</p>
     <p><strong>Сумма</strong>: {{ currency(request.amount) }}</p>
-    <p><strong>Статус</strong>: <app-status :type="request.status" /></p>
+    <p>
+      <strong>Статус</strong>:
+      <app-status :type="request.status" />
+    </p>
     <p>Изменить статус:</p>
     <div class="form-cnt select_status">
       <select v-model="status">
@@ -50,6 +44,7 @@ import AppStatus from "../components/ui/AppStatus.vue";
 import AppPage from "../components/ui/AppPage.vue";
 import AppLoader from "../components/ui/AppLoader.vue";
 import AppDelete from "../components/ui/AppDelete.vue";
+import AppBreadcrumb from "../components/ui/AppBreadcrumb.vue";
 import currency from "../utils/currency";
 
 export default {
@@ -112,7 +107,7 @@ export default {
     };
   },
 
-  components: { AppPage, AppLoader, AppStatus, AppDelete },
+  components: { AppPage, AppLoader, AppStatus, AppDelete, AppBreadcrumb },
 };
 </script>
 
