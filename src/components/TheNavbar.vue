@@ -26,10 +26,6 @@
               >Курс валюты</router-link
             >
           </li>
-
-          <li class="nav-item">
-            <a class="nav-link" @click.prevent="open" href="#">Сообщения</a>
-          </li>
           <li class="nav-item">
             <a class="nav-link" @click.prevent="logout" href="#">Выход</a>
           </li>
